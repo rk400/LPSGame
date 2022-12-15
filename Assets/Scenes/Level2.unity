@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 91271566}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3931,7 +3931,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 91271561}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 490d6116e90988446958bbba72e434ba, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -6384,7 +6384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 2
   jumpSpeed: 3
-  betterJump: 1
+  betterJump: 0
   fallMultiplier: 0.5
   lowJumpMultiplier: 1
   spriteRenderer: {fileID: 833772494}
@@ -8972,15 +8972,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5422950164340990431, guid: d23ef65f9b83709429881576850ebfd5, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5422950164340990431, guid: d23ef65f9b83709429881576850ebfd5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5422950164340990431, guid: d23ef65f9b83709429881576850ebfd5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5422950164340990431, guid: d23ef65f9b83709429881576850ebfd5, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -8988,7 +8988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5422950164340990431, guid: d23ef65f9b83709429881576850ebfd5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.000015258789
       objectReference: {fileID: 0}
     - target: {fileID: 5422950164340990431, guid: d23ef65f9b83709429881576850ebfd5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
