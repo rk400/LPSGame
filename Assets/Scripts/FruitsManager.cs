@@ -3,18 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class FruitsManager : MonoBehaviour
 {
     public GameObject winLevel;
-
     public GameObject transition;
+    public Text collectedFruits;
+    public Text totalFruits;
+    private int totalFruitsInLevel;
+
+    public void Start() {
+        totalFruitsInLevel = transform.childCount;
+    }
 
     private void Update(){
         AllFruitsCollected();
+        totalFruits.text = totalFruitsInLevel.ToString;
+        collectedFruits.text = transform.childCount.ToString;
     }
     
     public void AllFruitsCollected() {
+        if (winLevel == null) {
+            
+        }
         if (transform.childCount == 0) {
             Debug.Log("All Fruits Collected. You Win!");
             transition.SetActive(true);
