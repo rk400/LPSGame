@@ -6294,11 +6294,11 @@ GameObject:
   - component: {fileID: 833772495}
   - component: {fileID: 833772494}
   - component: {fileID: 833772493}
+  - component: {fileID: 833772500}
   - component: {fileID: 833772497}
   - component: {fileID: 833772496}
   - component: {fileID: 833772498}
   - component: {fileID: 833772499}
-  - component: {fileID: 833772500}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -6494,6 +6494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkPointPositionX: 0
   checkPointPositionY: 0
+  anim: {fileID: 833772493}
 --- !u!1 &876206726
 GameObject:
   m_ObjectHideFlags: 0
