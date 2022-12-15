@@ -8,6 +8,8 @@ public class FruitsManager : MonoBehaviour
 {
     public GameObject winLevel;
 
+    public GameObject transition;
+
     private void Update(){
         AllFruitsCollected();
     }
@@ -15,7 +17,7 @@ public class FruitsManager : MonoBehaviour
     public void AllFruitsCollected() {
         if (transform.childCount == 0) {
             Debug.Log("All Fruits Collected. You Win!");
-            winLevel.SetActive(true);
+            transition.SetActive(true);
             Invoke("ChangeScene", 1);
             
         }
