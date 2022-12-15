@@ -9,7 +9,7 @@ public class PlayerMove : MonoBehaviour
     public float jumpSpeed = 3;
 
     //Ajustes de salto
-    public bool betterJump = false;
+    public bool betterJump = true;
     public float fallMultiplier = 0.5f;
     public float lowJumpMultiplier = 1f;
 
