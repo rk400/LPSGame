@@ -49,7 +49,6 @@ public class PlayerMove : MonoBehaviour
         }
         
         if (CheckGround.isGrounded == false) {
-            Debug.Log("Estoy saltando y soy puto");
             animator.SetBool("Jump", true);
             animator.SetBool("Run", false);
         }
