@@ -46,12 +46,14 @@ public class PlayerMove : MonoBehaviour
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpSpeed);
         }
         
-        if (CheckGround.isGrounded == true) {
-            animator.SetBool("Jump", false);
-        } 
         if (CheckGround.isGrounded == false) {
             animator.SetBool("Jump", true);
             animator.SetBool("Run", false);
+        }
+
+        if (CheckGround.isGrounded == true)
+        {
+            animator.SetBool("Jump", false);
         }
 
         //Salto mejorado

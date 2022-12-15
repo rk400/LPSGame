@@ -4405,6 +4405,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7530019409630618361, guid: 1e9243a16d56c42459976673e385862d, type: 3}
   m_PrefabInstance: {fileID: 7530019409394140835}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &349883006 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+  m_PrefabInstance: {fileID: 1088804435}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &440140397
 GameObject:
   m_ObjectHideFlags: 0
@@ -5271,6 +5282,7 @@ GameObject:
   - component: {fileID: 833772497}
   - component: {fileID: 833772496}
   - component: {fileID: 833772498}
+  - component: {fileID: 833772499}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5420,12 +5432,32 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833772492}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d58585cadf462bd409849d97497603d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 2
+  jumpSpeed: 3
+  betterJump: 1
+  fallMultiplier: 0.5
+  lowJumpMultiplier: 1
+  spriteRenderer: {fileID: 833772494}
+  animator: {fileID: 833772493}
+--- !u!114 &833772499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833772492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed9be2df63532be47b06087a8c7b1a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick: {fileID: 349883006}
+  runSpeed: 1.25
   jumpSpeed: 3
   betterJump: 1
   fallMultiplier: 0.5
@@ -5529,7 +5561,7 @@ GameObject:
   - component: {fileID: 904110918}
   - component: {fileID: 904110917}
   m_Layer: 5
-  m_Name: Button
+  m_Name: JumpButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5598,7 +5630,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 904110918}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 833772499}
+        m_TargetAssemblyTypeName: PlayerMoveJoystick, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &904110918
 MonoBehaviour:
   m_ObjectHideFlags: 0
