@@ -16,5 +16,6 @@ public class CheckGround : MonoBehaviour
    {
         if(collision.CompareTag("Suelo"))
             isGrounded = false;
+        Debug.Log("Estoy saltando y soy puto");
    }
 }

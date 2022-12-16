@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine;
 
 public class PlayerMoveJoystick : MonoBehaviour
 {
@@ -53,6 +54,18 @@ public class PlayerMoveJoystick : MonoBehaviour
             animator.SetBool("Run", false);
         }
 
+        if (CheckGround.isGrounded == true)
+        {
+            animator.SetBool("Jump", false);
+        }
+
+        if (CheckGround.isGrounded == false)
+        {
+            Debug.Log("Estoy saltando y soy puto");
+            animator.SetBool("Jump", true);
+            animator.SetBool("Run", false);
+        }
+
     }
 
     void FixedUpdate()
@@ -60,7 +73,7 @@ public class PlayerMoveJoystick : MonoBehaviour
         horizontalMove = joystick.Horizontal * runSpeedHorizontal;
 
         transform.position += new Vector3(horizontalMove, 0, 0) * Time.deltaTime * runSpeed;
-        
+
     }
 
     public void Jump()
