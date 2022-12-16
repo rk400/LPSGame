@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-using UnityEngine.UI;
 
 public class FruitsManager : MonoBehaviour
 {
     public GameObject winLevel;
     public GameObject transition;
-    public Text collectedFruits;
-    public Text totalFruits;
+    public TMP_Text collectedFruits;
+    public TMP_Text totalFruits;
     private int totalFruitsInLevel;
 
     public void Start() {
@@ -19,8 +18,8 @@ public class FruitsManager : MonoBehaviour
 
     private void Update(){
         AllFruitsCollected();
-        totalFruits.text = totalFruitsInLevel.ToString;
-        collectedFruits.text = transform.childCount.ToString;
+        totalFruits.text = totalFruitsInLevel.ToString();
+        collectedFruits.text = transform.childCount.ToString();
     }
     
     public void AllFruitsCollected() {
