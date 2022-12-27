@@ -20,7 +20,7 @@ public class PlayerRespawn : MonoBehaviour
         PlayerPrefs.SetFloat("checkPointPositionY", y);
     }
 
-    public void PalyerDamaged() {
+    public void PlayerDamaged() {
         anim.Play("Hit");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
