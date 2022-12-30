@@ -5493,6 +5493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Transit
       objectReference: {fileID: 0}
+    - target: {fileID: 6783372591124529936, guid: 0289fb1e3fbd6bd4697f8ca8d3ca486b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6783372591124529938, guid: 0289fb1e3fbd6bd4697f8ca8d3ca486b, type: 3}
       propertyPath: m_RootOrder
       value: 9
