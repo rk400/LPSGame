@@ -9,6 +9,8 @@ Por si es su primera vez utilizando Unity, las ventanas del juego están dentro 
 
 Para compilar, simplemente `File > Build Settings...` a la plataforma que se desee.
 
+La version de Android esta hecha para instalar la .apk en el móvil, la versión de iOS, para fácilitar su simulación, esta hecha para ejecutar directamente con el simulador de Xcode, sin necesidad de iPhone ni cuentas de desarrollador.
+
 El tutorial seguido para nuestro juego pertenece a LuisCanary (en Youtube).
 
 ![Muestra de nivel 1](https://media1.giphy.com/media/jEp0gPoJWC3NL63XkC/giphy.gif?cid=790b76114e60ac945cf7ad20bb5c2e184ddc7def0982766f&rid=giphy.gif&ct=g "Muestra de nivel 1")
